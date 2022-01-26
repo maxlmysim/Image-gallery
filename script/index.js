@@ -3,7 +3,7 @@ function sleeper(ms) {
 }
 
 async function getImage(query) {
-    const link = `https://api.unsplash.com/search/photos?page=1&per_page=15&query=${query}%3E&client_id=amxu9UtVq4TovucYrdkOMQ3EZcz7--LvUzFTYABY96Q`;
+    const link = `https://api.unsplash.com/search/photos?page=1&per_page=20&query=${query}%3E&client_id=amxu9UtVq4TovucYrdkOMQ3EZcz7--LvUzFTYABY96Q`;
     const res = await fetch(link);
     const data = await res.json();
     let img = [];

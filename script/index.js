@@ -7,7 +7,7 @@ async function getImage(query) {
     const res = await fetch(link);
     const data = await res.json();
     let img = [];
-    img = data.results.map((item) => item.urls.small);
+    img = data.results.map((item) => item.urls.regular);
     document.querySelectorAll('.link-img').forEach((item) => item.remove());
     createimg(img);
 }

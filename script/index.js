@@ -8,7 +8,7 @@ async function getImage(query) {
     const data = await res.json();
     let img = [];
     img = data.results.map((item) => item.urls.small);
-    document.querySelectorAll('.link-img').forEach((item) => item.remove())
+    document.querySelectorAll('.link-img').forEach((item) => item.remove());
     createimg(img);
 }
 
@@ -18,21 +18,21 @@ function createimg(img) {
         let img = document.createElement('div');
         let a = document.createElement('a');
 
-        a.href = link
+        a.href = link;
         a.target = '_blank';
-        a.className = 'link-img'
+        a.className = 'link-img';
         img.className = 'img';
         img.style.backgroundImage = `url("${link}")`;
 
         document.querySelector('.container').append(a);
-        a.append(img)
+        a.append(img);
     });
 
 }
 
 let query = document.querySelector('.search-text');
 
-getImage('girl')
+getImage('girl');
 
 query.addEventListener('keydown', function (e) {
     if (e.keyCode === 13) {

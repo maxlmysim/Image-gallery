@@ -59,6 +59,7 @@ header {
 .img:hover {
     width: calc(380px * 1.05);
     height: calc(214px * 1.05);
+    box-shadow: 0 0 10px rgb(232, 190, 54);
 }
 
 .text-link {

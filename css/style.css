@@ -25,9 +25,7 @@ header {
     margin: 0;
 }
 
-
 .search-text {
-    max-width: 250px;
     width: 100%;
     border-radius: 10px;
     padding-left: 10px;

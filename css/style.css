@@ -17,16 +17,16 @@ header {
     align-items: center
 }
 
-.header__camera-logo{
+.header__camera-logo {
     width: 55px;
 }
 
 .header__title {
-margin: 0;
+    margin: 0;
 }
 
 .search-text {
-    margin-right: 15px;
+    margin-right: 100px;
     max-width: 250px;
     width: 100%;
     border-radius: 10px;
@@ -34,12 +34,30 @@ margin: 0;
 
 .container {
     display: flex;
- }
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.img {
+    width: 380px;
+    height: 214px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.img:hover {
+    width: calc(380px * 1.05);
+    height: calc(214px * 1.05);
+}
 
 .text-link {
     text-decoration: none;
-    color: rgba(37, 38, 47, 0.73);
+    color: rgba(178, 169, 169, 0.96);
 }
 
 .text-link:hover {
@@ -50,15 +68,13 @@ margin: 0;
 }
 
 .footer {
-    position: absolute;
-    background-color: rgba(73, 166, 233, 0.44);
-    bottom: 0;
+    border-top: 7px solid #ffa500;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     font-size: 20px;
-    color: rgba(37, 38, 47, 0.73);
+    color: rgba(178, 169, 169, 0.96);
 
 }
 
@@ -79,7 +95,7 @@ margin: 0;
 }
 
 .rss-logo {
-    fill: rgba(37, 38, 47, 0.73);
+    fill: rgba(178, 169, 169, 0.96);
     height: 40px;
     width: 120px;
 }

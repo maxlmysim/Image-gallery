@@ -1,7 +1,3 @@
-function sleeper(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 async function getImage(query) {
   const link = `https://api.unsplash.com/search/photos?page=1&per_page=20&query=${query}%3E&client_id=amxu9UtVq4TovucYrdkOMQ3EZcz7--LvUzFTYABY96Q`;
   const res = await fetch(link);

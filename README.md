@@ -1,3 +1,3 @@
-# Unsplash-API
+# Image gallery
 
-https://maxlmysim.github.io/Unsplash-API/
+https://maxlmysim.github.io/Image-gallery/
